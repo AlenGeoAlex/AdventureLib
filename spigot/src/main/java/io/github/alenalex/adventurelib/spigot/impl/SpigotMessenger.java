@@ -23,12 +23,10 @@ public class SpigotMessenger implements Messenger<Player> {
     private final JavaPlugin plugin;
     private final Translator translator;
     private final BukkitAudiences audiences;
-    private final boolean placeholderAPIEnabled;
 
-    public SpigotMessenger(JavaPlugin plugin, Translator translator, boolean placeholderAPIEnabled) {
+    public SpigotMessenger(JavaPlugin plugin, Translator translator ) {
         this.plugin = plugin;
         this.translator = translator;
-        this.placeholderAPIEnabled = placeholderAPIEnabled;
         this.audiences = BukkitAudiences.create(plugin);
     }
 

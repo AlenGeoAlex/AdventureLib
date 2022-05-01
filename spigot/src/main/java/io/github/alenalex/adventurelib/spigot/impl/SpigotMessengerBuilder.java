@@ -9,7 +9,6 @@ public class SpigotMessengerBuilder implements MessengerBuilder<JavaPlugin> {
 
     private JavaPlugin plugin = null;
     private Translator translator = null;
-    private boolean placeholderAPI = false;
 
     @Override
     public SpigotMessengerBuilder setPlugin(JavaPlugin plugin) {
@@ -29,11 +28,6 @@ public class SpigotMessengerBuilder implements MessengerBuilder<JavaPlugin> {
         return this;
     }
 
-    public SpigotMessengerBuilder setPlaceholderAPI(boolean placeholderAPI) {
-        this.placeholderAPI = placeholderAPI;
-        return this;
-    }
-
     @Override
     public SpigotMessenger build() {
         if(plugin == null)
@@ -42,6 +36,6 @@ public class SpigotMessengerBuilder implements MessengerBuilder<JavaPlugin> {
         if(translator == null)
             this.translator = Translator.MINI_MESSAGE;
 
-        return new SpigotMessenger(plugin, translator, placeholderAPI);
+        return new SpigotMessenger(plugin, translator);
     }
 }
