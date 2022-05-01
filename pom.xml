@@ -12,6 +12,7 @@
         <module>common</module>
         <module>spigot</module>
         <module>bungee</module>
+        <module>velocity</module>
     </modules>
 
     <properties>
