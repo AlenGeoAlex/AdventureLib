@@ -39,7 +39,7 @@
         </dependency>
 
         <dependency>
-            <groupId>io.github.alenalex.adventurelib</groupId>
+            <groupId>io.github.alenalex.adventurelib.common</groupId>
             <artifactId>common</artifactId>
             <version>1.0-SNAPSHOT</version>
             <scope>compile</scope>
