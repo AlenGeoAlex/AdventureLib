@@ -4,13 +4,13 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
         <artifactId>AdventureLib</artifactId>
-        <groupId>io.github.alenalex</groupId>
+        <groupId>io.github.alenalex.adventurelib</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>io.github.alenalex.adventurelib.common</groupId>
-    <artifactId>common</artifactId>
+    <artifactId>adventurelib-common</artifactId>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
@@ -46,4 +46,10 @@
         </dependency>
     </dependencies>
 
+    <distributionManagement>
+        <repository>
+            <id>repo.alenalex-snapshots</id>
+            <url>https://repo.alenalex.me/snapshots</url>
+        </repository>
+    </distributionManagement>
 </project>

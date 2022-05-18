@@ -18,13 +18,17 @@ import java.util.concurrent.TimeUnit;
 import java.util.function.Predicate;
 
 public class VelocityMessenger implements Messenger<Player> {
+
+    public static VelocityMessengerBuilder builder(){
+        return new VelocityMessengerBuilder();
+    }
+
     private final ProxyServer plugin;
     private final Translator defaultTranslator;
 
     public VelocityMessenger(ProxyServer plugin, Translator defaultTranslator) {
         this.plugin = plugin;
         this.defaultTranslator = defaultTranslator;
-
     }
 
     @Override

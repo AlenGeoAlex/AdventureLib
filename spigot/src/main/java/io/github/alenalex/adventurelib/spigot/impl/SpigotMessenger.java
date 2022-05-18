@@ -20,6 +20,10 @@ import java.util.function.Predicate;
 
 public class SpigotMessenger implements Messenger<Player> {
 
+    public static SpigotMessengerBuilder builder(){
+        return new SpigotMessengerBuilder();
+    }
+
     private final JavaPlugin plugin;
     private final Translator translator;
     private final BukkitAudiences audiences;
@@ -144,12 +148,12 @@ public class SpigotMessenger implements Messenger<Player> {
 
     @Override
     public void sendActionBar(Player player, String message) {
-        this.audiences.player(player).sendMessage(translator.colorize(message));
+        this.audiences.player(player).sendActionBar(translator.colorize(message));
     }
 
     @Override
     public void sendActionBar(Player player, String message, Translator translatorToUse) {
-        this.audiences.player(player).sendMessage(translatorToUse.colorize(message));
+        this.audiences.player(player).sendActionBar(translatorToUse.colorize(message));
     }
 
     @Override

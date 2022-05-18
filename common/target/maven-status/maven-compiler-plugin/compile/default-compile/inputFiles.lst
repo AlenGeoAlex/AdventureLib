@@ -1,0 +1,12 @@
+A:\Java\AdventureLib\common\src\main\java\io\github\alenalex\adventurelib\common\translator\MiniMessageTranslator.java
+A:\Java\AdventureLib\common\src\main\java\io\github\alenalex\adventurelib\common\builder\TitleBuilder.java
+A:\Java\AdventureLib\common\src\main\java\io\github\alenalex\adventurelib\common\translator\LegacyTranslator.java
+A:\Java\AdventureLib\common\src\main\java\io\github\alenalex\adventurelib\common\builder\BookBuilder.java
+A:\Java\AdventureLib\common\src\main\java\io\github\alenalex\adventurelib\common\interfaces\Translator.java
+A:\Java\AdventureLib\common\src\main\java\io\github\alenalex\adventurelib\common\exception\IllegalBuildingParameter.java
+A:\Java\AdventureLib\common\src\main\java\io\github\alenalex\adventurelib\common\interfaces\Messenger.java
+A:\Java\AdventureLib\common\src\main\java\io\github\alenalex\adventurelib\common\builder\BossBarBuilder.java
+A:\Java\AdventureLib\common\src\main\java\io\github\alenalex\adventurelib\common\builder\SoundBuilder.java
+A:\Java\AdventureLib\common\src\main\java\io\github\alenalex\adventurelib\common\interfaces\MessengerBuilder.java
+A:\Java\AdventureLib\common\src\main\java\io\github\alenalex\adventurelib\common\interfaces\Translatable.java
+A:\Java\AdventureLib\common\src\main\java\io\github\alenalex\adventurelib\common\interfaces\ComponentBuilder.java
