@@ -185,6 +185,11 @@ public class VelocityMessenger implements Messenger<Player> {
     }
 
     @Override
+    public void hideBossBar(@NotNull Player player, @NotNull BossBar bossBar) {
+        player.hideBossBar(bossBar);
+    }
+
+    @Override
     public List<Audience> asAudienceWithPerms(@NotNull String perms) {
         return null;
     }

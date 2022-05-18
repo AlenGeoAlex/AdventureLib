@@ -32,11 +32,11 @@ public class BungeeMessengerBuilder implements MessengerBuilder<Plugin> {
 
     @Override
     public Messenger<ProxiedPlayer> build() {
-        if(plugin == null)
-            throw new IllegalBuildingParameter("You have not provided the plugin!");
+                if(plugin == null)
+                    throw new IllegalBuildingParameter("You have not provided the plugin!");
 
-        if(translator == null)
-            this.translator = Translator.MINI_MESSAGE;
+                if(translator == null)
+                    this.translator = Translator.MINI_MESSAGE;
 
         return new BungeeMessenger(plugin, translator);
     }

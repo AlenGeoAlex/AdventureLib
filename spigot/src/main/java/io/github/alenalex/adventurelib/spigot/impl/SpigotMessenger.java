@@ -216,6 +216,11 @@ public class SpigotMessenger implements Messenger<Player> {
     }
 
     @Override
+    public void hideBossBar(@NotNull Player player, @NotNull BossBar bossBar) {
+        this.audiences.player(player).hideBossBar(bossBar);
+    }
+
+    @Override
     public void sendConsoleMessage(String text) {
         this.audiences.console().sendMessage(translator.colorize(text));
     }

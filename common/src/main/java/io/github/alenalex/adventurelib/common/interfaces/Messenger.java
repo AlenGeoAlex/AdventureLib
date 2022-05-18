@@ -309,6 +309,14 @@ public interface Messenger<T> {
         }
     }
 
+    void hideBossBar(@NotNull T player, @NotNull BossBar bossBar);
+
+    default void hideBossBar(@NotNull T player, BossBar... bossBars){
+        for(BossBar bossBar : bossBars){
+            hideBossBar(player, bossBar);
+        }
+    }
+
     List<Audience> asAudienceWithPerms(@NotNull String perms);
 
     List<Audience> asAudienceOf(Predicate<T> condition);

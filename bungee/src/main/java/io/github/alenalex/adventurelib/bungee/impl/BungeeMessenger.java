@@ -208,6 +208,11 @@ public class BungeeMessenger implements Messenger<ProxiedPlayer> {
     }
 
     @Override
+    public void hideBossBar(@NotNull ProxiedPlayer player, @NotNull BossBar bossBar) {
+        this.audiences.player(player).hideBossBar(bossBar);
+    }
+
+    @Override
     public List<Audience> asAudienceOf(Predicate<ProxiedPlayer> condition) {
         final List<Audience> audienceList = new ArrayList<>();
         for(ProxiedPlayer player : plugin.getProxy().getPlayers()){

@@ -94,7 +94,7 @@ public class BossBarBuilder implements ComponentBuilder<BossBar>, Translatable<B
     }
 
     @Override
-    public BossBarBuilder clear() {
+    public BossBarBuilder resetBuilder() {
         this.text = null;
         this.progressBar = 1.0f;
         this.bossBarColor = BossBar.Color.RED;
@@ -118,5 +118,10 @@ public class BossBarBuilder implements ComponentBuilder<BossBar>, Translatable<B
     public BossBarBuilder withMiniMessageTranslator() {
         this.defaultTranslator = Translator.MINI_MESSAGE;
         return this;
+    }
+
+    @Override
+    protected BossBarBuilder clone() throws CloneNotSupportedException {
+        return (BossBarBuilder) super.clone();
     }
 }

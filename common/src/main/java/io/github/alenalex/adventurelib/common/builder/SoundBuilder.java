@@ -101,12 +101,17 @@ public class SoundBuilder implements ComponentBuilder<Sound> {
     }
 
     @Override
-    public SoundBuilder clear() {
+    public SoundBuilder resetBuilder() {
         this.key = null;
         this.source = null;
 
         this.radius = 1.0f;
         this.pitch = 1.0f;
         return this;
+    }
+
+    @Override
+    protected SoundBuilder clone() throws CloneNotSupportedException {
+        return (SoundBuilder) super.clone();
     }
 }

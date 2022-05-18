@@ -90,7 +90,7 @@ public class BookBuilder implements ComponentBuilder<Book>, Translatable<BookBui
     }
 
     @Override
-    public BookBuilder clear() {
+    public BookBuilder resetBuilder() {
         this.bookAuthor = null;
         this.bookTitle = null;
         this.bookPages.clear();
@@ -112,5 +112,10 @@ public class BookBuilder implements ComponentBuilder<Book>, Translatable<BookBui
     public BookBuilder withMiniMessageTranslator() {
         this.defaultTranslator = Translator.MINI_MESSAGE;
         return this;
+    }
+
+    @Override
+    protected BookBuilder clone() throws CloneNotSupportedException {
+        return (BookBuilder) super.clone();
     }
 }

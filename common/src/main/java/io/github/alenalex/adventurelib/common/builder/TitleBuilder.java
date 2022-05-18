@@ -86,7 +86,7 @@ public class TitleBuilder implements ComponentBuilder<Title>, Translatable<Title
     }
 
     @Override
-    public TitleBuilder clear() {
+    public TitleBuilder resetBuilder() {
         this.title = null;
         this.subTitle = null;
         this.fadeIn = 500;
@@ -110,5 +110,10 @@ public class TitleBuilder implements ComponentBuilder<Title>, Translatable<Title
     public TitleBuilder withMiniMessageTranslator() {
         this.defaultTranslator = Translator.MINI_MESSAGE;
         return this;
+    }
+
+    @Override
+    protected TitleBuilder clone() throws CloneNotSupportedException {
+        return (TitleBuilder) super.clone();
     }
 }
