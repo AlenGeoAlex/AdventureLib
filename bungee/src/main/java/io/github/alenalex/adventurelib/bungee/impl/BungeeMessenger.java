@@ -3,6 +3,7 @@ package io.github.alenalex.adventurelib.bungee.impl;
 import io.github.alenalex.adventurelib.common.interfaces.Messenger;
 import io.github.alenalex.adventurelib.common.interfaces.MessengerBuilder;
 import io.github.alenalex.adventurelib.common.interfaces.Translator;
+import io.github.alenalex.adventurelib.common.sounds.Sounds;
 import net.kyori.adventure.audience.Audience;
 import net.kyori.adventure.bossbar.BossBar;
 import net.kyori.adventure.inventory.Book;

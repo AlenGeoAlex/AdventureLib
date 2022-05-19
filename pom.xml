@@ -7,7 +7,7 @@
     <groupId>io.github.alenalex.adventurelib</groupId>
     <artifactId>AdventureLib</artifactId>
     <packaging>pom</packaging>
-    <version>1.2-SNAPSHOT</version>
+    <version>1.3-SNAPSHOT</version>
     <modules>
         <module>common</module>
         <module>spigot</module>
@@ -23,15 +23,6 @@
     <repositories>
 
     </repositories>
-
-    <dependencies>
-        <dependency>
-            <groupId>net.kyori</groupId>
-            <artifactId>adventure-platform-bukkit</artifactId>
-            <version>4.1.0</version>
-        </dependency>
-    </dependencies>
-
 
     <distributionManagement>
         <repository>
